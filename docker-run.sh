@@ -1,11 +1,1 @@
-docker run -d
-    --sysctl net.ipv4.ping_group_range="0 2147483647"
-    --env TWINGATE_NETWORK="computist"
-    --env TWINGATE_ACCESS_TOKEN="eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc3VUs4ZTN5VFIzdW9ZV1ZzUDFnYTZZTEJsaHZwdXpZXzZpMzV0UThNcW8iLCJ0eXAiOiJEQVQifQ.eyJhdWRzIjpudWxsLCJudCI6IkFOIiwiYWlkIjoiNjYxOTY4IiwiZGlkIjoiMjcyMzUxNCIsInJudyI6MTc2MzU0MzQ3NCwianRpIjoiNjk1Y2EzZjUtODQ3YS00NTFjLWE1ZDItY2ZkZDZjNTdlYzYxIiwiaXNzIjoidHdpbmdhdGUiLCJhdWQiOiJjb21wdXRpc3QiLCJleHAiOjE3NjM1NDY3OTEsImlhdCI6MTc2MzU0MzE5MSwidmVyIjoiNCIsInRpZCI6IjE5MTY5NCIsInJuZXRpZCI6IjI1Mzg4MSJ9.g0m8H7tAzDSY7iu7poZdx39LfESVLzNBIeNulQ7iZCSnobmEROwasqQm-ciI3kvlvV7QZIgxpKAWVoHdM-t3Yg"
-    --env TWINGATE_REFRESH_TOKEN="1R5aQdYM81b1NGvZqgf-ZDEC4lQXCg83idfQu7OyBCl-Ev4zV0W3qputBX_zEeoOooqxFVQ8S4YohnboGy4fnNxRGLc7sIV-NbCpLxN61zAFY_AdvCfBCpQfMwGAX3QUkDHHOA"
-    --env TWINGATE_LABEL_HOSTNAME="`hostname`"
-    --env TWINGATE_LABEL_DEPLOYED_BY="docker"
-    --name "twingate-blazing-bison"
-    --restart=unless-stopped
-    --pull=always
-    twingate/connector:1
+docker run -d --sysctl net.ipv4.ping_group_range="0 2147483647" --env TWINGATE_NETWORK="computist" --env TWINGATE_ACCESS_TOKEN="eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc3VUs4ZTN5VFIzdW9ZV1ZzUDFnYTZZTEJsaHZwdXpZXzZpMzV0UThNcW8iLCJ0eXAiOiJEQVQifQ.eyJhdWRzIjpudWxsLCJudCI6IkFOIiwiYWlkIjoiNjYxOTY4IiwiZGlkIjoiMjcyMzUxNCIsInJudyI6MTc2MzU0MzQ3NCwianRpIjoiNjk1Y2EzZjUtODQ3YS00NTFjLWE1ZDItY2ZkZDZjNTdlYzYxIiwiaXNzIjoidHdpbmdhdGUiLCJhdWQiOiJjb21wdXRpc3QiLCJleHAiOjE3NjM1NDY3OTEsImlhdCI6MTc2MzU0MzE5MSwidmVyIjoiNCIsInRpZCI6IjE5MTY5NCIsInJuZXRpZCI6IjI1Mzg4MSJ9.g0m8H7tAzDSY7iu7poZdx39LfESVLzNBIeNulQ7iZCSnobmEROwasqQm-ciI3kvlvV7QZIgxpKAWVoHdM-t3Yg" --env TWINGATE_REFRESH_TOKEN="1R5aQdYM81b1NGvZqgf-ZDEC4lQXCg83idfQu7OyBCl-Ev4zV0W3qputBX_zEeoOooqxFVQ8S4YohnboGy4fnNxRGLc7sIV-NbCpLxN61zAFY_AdvCfBCpQfMwGAX3QUkDHHOA"  --env TWINGATE_LABEL_HOSTNAME="`hostname`" --env TWINGATE_LABEL_DEPLOYED_BY="docker" --name "twingate-blazing-bison" --restart=unless-stopped --pull=always twingate/connector:1
